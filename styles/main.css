@@ -635,4 +635,10 @@ ul {
 .deactivate-scroll {
   overflow: hidden;
 }
+
+.sr-only {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
 /*# sourceMappingURL=main.css.map */
