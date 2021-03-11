@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+    max-width: 65rem; 
+    margin: 0 auto;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
+.hide-for-mobile {
+    @include breakpoints-down("medium") {
+        display: none; 
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoints-up("medium") {
+        display: none;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center; 
+}
+
+.text-center {
+    text-align: center;
+}
+
+.deactivate-scroll {
+    overflow: hidden;
+}

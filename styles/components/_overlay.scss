@@ -1,0 +1,20 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s; 
+    cursor: pointer;
+
+    &.is-active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &--menu {
+        background-image: linear-gradient(180deg, transparent, rgba($very-dark-blue, .55));
+    }
+}

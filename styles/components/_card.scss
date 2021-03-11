@@ -1,0 +1,50 @@
+.card {
+    position: relative;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    gap: .5rem;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% + 1.4rem);
+        height: 2.4375rem;
+        background-color: rgba($bright-red, .25);
+        border-radius: 50rem 0 0 50rem;
+        z-index: -1;
+    }
+    
+    span {
+        display: block;
+        padding: .5rem 1.5rem;
+        background-color: $bright-red;
+        border-radius: 50rem;
+        color: white;
+
+        
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        margin: 0;
+        grid-column: 1 / -1;
+    }
+
+    @include breakpoints-up("medium") {
+        grid-column-gap: 1.5rem;
+
+        &::after {
+            display: none;
+        }
+
+        p {
+            grid-column: 2 / -1;
+        }
+    }
+}

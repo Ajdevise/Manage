@@ -1,0 +1,13 @@
+.testimonial {
+    width: 100%;
+    // max-width: 40rem;
+    max-width: 46rem;
+    background-color: $very-light-gray;
+    padding: 1rem;
+
+    &__img {
+        max-width: 4.5rem;
+        margin-bottom: 1rem;
+        margin-top: -3rem;
+    }
+}

@@ -1,0 +1,29 @@
+.hero {
+
+    &__copy {
+        text-align: center;
+    }
+
+    &__img-wrapper {
+        text-align: center;
+    }
+
+    &__img {
+        width: 100%;
+        max-width: 25rem;
+    }
+
+    @include breakpoints-up("medium") {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 6rem;
+        padding: 8rem 0;
+        
+        &__copy {
+            text-align: left;
+            grid-column: 1 / 2;
+            grid-row: 1 / 2; 
+        }
+    }
+}

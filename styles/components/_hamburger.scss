@@ -1,0 +1,38 @@
+.hamburger {
+    display: inline-block; 
+    width: 1.75rem;
+    cursor: pointer;
+
+    &__line {
+        display: block;
+        height: .3rem;
+        width: 100%;
+        background-color: $dark-blue;
+        transform-origin: top right; 
+        transition: all .2s;
+        
+        &:not(:last-child) {
+            margin-bottom: .2rem;
+        }
+
+        &--2 {
+            transform-origin: center center; 
+        }
+
+    }
+
+    &.is-active &__line{
+        
+        &--1 {
+            transform: rotate(-45deg);
+        }
+
+        &--2 {
+            transform: scale(0);
+        }
+
+        &--3 {
+            transform: rotate(45deg) translate(6px, 0px);
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.cta {
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    padding: .7rem 1.5rem;
+    border-radius: 50rem;
+    cursor: pointer;
+
+    &--primary {
+        background-color: $bright-red;
+        color: #fff;
+        box-shadow: 0 4px 8px 0 rgba($bright-red, .55);
+
+        
+        &:hover {
+            background-color: lighten($bright-red, 10%);
+        }
+    }
+
+    &--secondary {
+        background-color: #fff;
+        color: $bright-red;
+
+        &:hover {
+            background-color: darken(#fff, 5%);
+        }
+    }
+}
